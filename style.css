@@ -26,6 +26,7 @@ html{
     font-size: 24px;
     border-radius: 6px;
     cursor: pointer;
+    z-index: 999;
 }
 .navbar{
     position: fixed;
@@ -79,13 +80,9 @@ html{
 
 /* menu btn section*/
 .menu-btn{
-    position: fixed;
     color: #fff;
     font-size: 30px;
-    cursor: pointer;
     display: none;
-    right: 30px;
-    bottom: 10px;
 }
 .scroll-up-btn{
     position: fixed;
@@ -103,6 +100,7 @@ html{
     cursor: pointer;
     pointer-events: all;
     transition: all 0.3s ease;
+    opacity: 1;
 }
 .scroll-up-btn.show{
     bottom: 30px;
