@@ -237,7 +237,7 @@
                 </div>
                 <div class="column rigth">
                     <div class="text">Mensaje</div>
-                    <form action="#" id="form">
+                    <form action="#" name="contact-form" method="post" action="enviar2.php">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Nombre" name="nombre" required>
@@ -250,7 +250,7 @@
                             <input type="text" id="subject" placeholder="Asunto" name="subject">
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" id="message"placeholder="Descripcion del proyecto..." name="mensaje"required></textarea>
+                            <textarea cols="30" rows="10" id="message"placeholder="Descripcion del proyecto..." name="mensaje" required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Enviar mensaje</button>
