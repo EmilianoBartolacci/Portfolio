@@ -13,9 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
+    
+    <div class="translate">
+        <i class="fa-solid fa-language"></i>
+    </div>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
+
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Wa<span>llx</span></a></div>
@@ -232,24 +237,25 @@
                 </div>
                 <div class="column rigth">
                     <div class="text">Mensaje</div>
-                    <form action="#">
+                    <form action="#" id="form">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nombre" required>
+                                <input type="text" placeholder="Nombre" name="nombre" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" placeholder="Email" name="email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Asunto" required>
+                            <input type="text" id="subject" placeholder="Asunto" name="subject">
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Descripcion del proyecto..." required></textarea>
+                            <textarea cols="30" rows="10" id="message"placeholder="Descripcion del proyecto..." name="mensaje"required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Enviar mensaje</button>
                         </div>
+                        <a id="emailA"></a>
                     </form>
                 </div>
             </div>

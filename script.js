@@ -1,3 +1,20 @@
+/*const form = document.getElementById('form')
+const sendMail = document.getElementById('emailA')
+
+function hadleSendEmail(event){
+    event.preventDefault()
+    const fd = new FormData(this)
+
+    sendMail.setAttribute(
+        'href',
+        `mailTo:emibarto@live.com.ar?subject=${fd.get('subject')}&body=${fd.get('message')}`
+    )
+    
+    sendMail.click()
+}
+form.addEventListener('submit', hadleSendEmail)*/
+
+
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 0){
