@@ -704,6 +704,20 @@ footer span a:hover{
     }
 }
 @media (max-width: 690px){
+    .modal_container{
+        width: 60%;
+    }
+    .modal_title{
+        font-size: 25px;
+    }
+    .translate-1, .translate-2, .translate-3{
+        padding: 0.5em 1em;
+        font-size: 15px;
+    }
+    .modal_close{
+        padding: 0.2em 0.7em;
+        font-size: 15px;
+    }
     .max-width{
         padding: 0 23px;
     }
@@ -721,7 +735,13 @@ footer span a:hover{
     }
     
 }
+@media (max-width: 530px){
+    .translate-1, .translate-2, .translate-3{
+        padding: 0.3em 0.8em;
+    }
+}
 @media (max-width: 500px){
+
     .home .home-content .text-2{
         font-size: 50px;
     }
