@@ -22,7 +22,7 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky")
         }
-        if(this.scroll > 500){
+        if(this.scrollY > 500){
             $('.scroll-up-btn').addClass('show');
         }else{
             $('.scroll-up-btn').removeClass('show');

@@ -98,9 +98,9 @@ html{
     font-size: 30px;
     border-radius: 6px;
     cursor: pointer;
-    pointer-events: all;
+    opacity: 0;
+    pointer-events: none;
     transition: all 0.3s ease;
-    opacity: 1;
 }
 .scroll-up-btn.show{
     bottom: 30px;
