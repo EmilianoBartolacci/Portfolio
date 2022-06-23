@@ -13,7 +13,18 @@ function hadleSendEmail(event){
     sendMail.click()
 }
 form.addEventListener('submit', hadleSendEmail)*/
+const openModal = document.querySelector('.translate');
+const modal = document.querySelector('.modal');
+const closeModal = document.querySelector('.modal_close');
 
+openModal.addEventListener('click', (e) => {
+    e.preventDefault()
+    modal.classList.add('modal--show');
+})
+closeModal.addEventListener('click', (e) => {
+    e.preventDefault()
+    modal.classList.remove('modal--show');
+})
 
 $(document).ready(function(){
     $(window).scroll(function(){

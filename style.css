@@ -13,6 +13,88 @@ html{
     padding: 0 80px;
     margin: auto;
 }
+/* modal*/
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s;
+}
+.modal_container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: black;
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+.modal_title{
+    font-size: 50px;
+    color: #fff;
+    padding: 0 0.5em;
+}
+.modal_title span{
+    color: crimson;
+}
+.buttons{
+    text-align: center;
+}
+.translate-1, .translate-2, .translate-3{
+    color: #fff;
+    border: 1px solid crimson;
+    display: inline-block;
+    padding: 0.5em 2.5em;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+.translate-1:hover, .translate-2:hover, .translate-3:hover{
+    color: crimson;
+    background: none;
+} 
+
+.modal_close{
+    text-decoration: none;
+    color: #fff;
+    background: crimson;
+    padding: 0.5em 1.5em;
+    border: 1px solid crimson;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+.modal_close:hover{
+    color: crimson;
+    background: none;
+}
+.modal--show{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity .3s;
+}
+
+
+
+
+
+
+
+
+
 .translate{
     position: fixed;
     height: 45px;
